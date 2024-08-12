@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Project</title>
+</head>
+<script>
+
+    const choices = ["rock", "paper", "scissors"];
+    let humanScore = computerScore = 0;
+
+    function getComputerChoice(){
+        let choice = choices[Math.floor(Math.random() * 3)];
+        return choice;
+    }
+
+    function getHumanChoice(){
+        let message = "Please choice\n0) Rock\n1) Paper\n2) Scissors";
+        let choice = prompt(message);
+        return choices[choice];
+    }
+
+    console.log("hello");
+
+    console.log(getHumanChoice());
+    console.log(getComputerChoice());
+    console.log(`Player: ${humanScore} | Computer: ${computerScore}`);
+
+</script>
+
+<body>
+    right click to inspect and click console for js related stuff.
+</body>
+
+
+</html>
